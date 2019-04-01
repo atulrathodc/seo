@@ -1,0 +1,54 @@
+{
+  "name": "webpack-react-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bd": "webpack && webpack --config webpack.client.js ",
+    "bdc": "webpack --config webpack.client.js ",
+    "serve": "nodemon --watch dist --exec node dist/main.js",
+    "build": "webpack",
+    "test": "jest --watchAll",
+    "jest-help": "jest --help"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest-cli": "^24.5.0",
+    "nodemon": "^1.18.10",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-redux": "^4.4.9",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "babel-jest": "^24.5.0",
+    "body-parser": "^1.18.3",
+    "jest": "^24.5.0",
+    "react-redux-form": "^1.16.12",
+    "react-router-config": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-test-renderer": "^16.8.4"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ]
+  }
+}
